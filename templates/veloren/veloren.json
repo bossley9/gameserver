@@ -1,0 +1,42 @@
+{
+  "name": "docker-veloren",
+  "display": "Docker - Veloren",
+  "type": "veloren",
+  "install": [
+    {
+      "commands": [
+        "wget https://gitlab.com/veloren/veloren/-/raw/master/server-cli/docker-compose.yml",
+        "wget https://github.com/bossley9/gameserver/blob/main/templates/veloren/server.sh"
+      ],
+      "type": "command"
+    }
+  ],
+  "run": {
+    "stop": "sh server.sh stop",
+    "command": "sh server.sh start",
+    "workingDirectory": "",
+    "pre": [],
+    "post": [],
+    "environmentVars": {}
+  },
+  "data": {},
+  "environment": {
+    "type": "standard"
+  },
+  "supportedEnvironments": [
+    {
+      "type": "standard"
+    }
+  ],
+  "requirements": {
+    "binaries": [
+      "sh",
+      "wget",
+      "docker",
+      "docker-compose",
+      "sudo"
+    ],
+    "os": "linux",
+    "arch": "amd64"
+  }
+}
