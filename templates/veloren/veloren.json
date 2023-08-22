@@ -6,7 +6,7 @@
     {
       "commands": [
         "wget https://gitlab.com/veloren/veloren/-/raw/master/server-cli/docker-compose.yml",
-        "wget https://github.com/bossley9/gameserver/blob/main/templates/veloren/server.sh"
+        "wget https://raw.githubusercontent.com/bossley9/gameserver/main/templates/veloren/server.sh"
       ],
       "type": "command"
     }
