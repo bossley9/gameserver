@@ -12,7 +12,7 @@
     }
   ],
   "run": {
-    "stop": "shutdown graceful 30",
+    "stop": "shutdown graceful 15",
     "command": "sh server.sh start",
     "workingDirectory": "",
     "pre": [],
