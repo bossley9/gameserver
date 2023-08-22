@@ -5,7 +5,4 @@ case "$1" in
     sudo docker-compose up -d
     sudo docker attach veloren-game-server-master
     ;;
-  "stop")
-    shutdown graceful 30
-    ;;
 esac
